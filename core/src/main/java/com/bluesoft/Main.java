@@ -16,7 +16,7 @@ public class Main {
 
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        NumberGenerator generator = context.getBean("numberGenerator",NumberGenerator.class);
+        NumberGenerator generator = context.getBean(NumberGenerator.class);
 
         int number = generator.next();
 
