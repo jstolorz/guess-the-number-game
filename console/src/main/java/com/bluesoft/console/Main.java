@@ -1,5 +1,9 @@
-package com.bluesoft;
+package com.bluesoft.console;
 
+import com.bluesoft.AppConfig;
+import com.bluesoft.Game;
+import com.bluesoft.MessageGenerator;
+import com.bluesoft.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
