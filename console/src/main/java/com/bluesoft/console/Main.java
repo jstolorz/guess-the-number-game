@@ -1,6 +1,6 @@
 package com.bluesoft.console;
 
-import com.bluesoft.AppConfig;
+import com.bluesoft.config.AppConfig;
 import com.bluesoft.Game;
 import com.bluesoft.MessageGenerator;
 import com.bluesoft.NumberGenerator;

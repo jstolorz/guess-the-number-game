@@ -47,6 +47,8 @@ public class ConsoleNumberGuess {
                 if(!playAgain.equals("y")){
                     break;
                 }
+
+                game.reset();
             }
         }
     }
