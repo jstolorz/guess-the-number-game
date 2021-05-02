@@ -2,6 +2,7 @@ package com.bluesoft.config;
 
 import com.bluesoft.GuessCount;
 import com.bluesoft.MaxNumber;
+import com.bluesoft.MinNumber;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,9 @@ public class GameConfig {
   @Value("${game.maxNumber:20}")
   private int maxNumber;
 
+  @Value("${game.minNumber:0}")
+  private int minNumber;
+
   @Value("${game.guessCount:5}")
   private int guessCount;
 
@@ -21,6 +25,12 @@ public class GameConfig {
   @MaxNumber
   public int maxNumber(){
       return maxNumber;
+  }
+
+  @Bean
+  @MinNumber
+  public int minNumber(){
+    return minNumber;
   }
 
   @Bean
