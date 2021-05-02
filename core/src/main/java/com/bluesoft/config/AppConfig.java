@@ -11,12 +11,8 @@ import org.springframework.context.annotation.Import;
 @ComponentScan(basePackages = "com.bluesoft")
 public class AppConfig {
 
-     @Bean
-     public NumberGenerator numberGenerator(){
-         return new NumberGeneratorImpl();
-     }
 
-     @Bean
+    @Bean
     public Game game(){
          return new GameImpl();
      }
