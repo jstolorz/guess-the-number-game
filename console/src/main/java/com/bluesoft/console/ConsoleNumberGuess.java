@@ -15,11 +15,14 @@ import java.util.Scanner;
 public class ConsoleNumberGuess {
     private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
-    @Autowired
-    private Game game;
+    private final Game game;
+    private final MessageGenerator messageGenerator;
 
     @Autowired
-    private MessageGenerator messageGenerator;
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     //1. method parameter is use for spring to check what kind of event we want.
     //2. instead we can add param to @EventListener
