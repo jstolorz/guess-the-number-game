@@ -1,10 +1,12 @@
 package com.bluesoft;
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Getter
 @Component
 public class NumberGeneratorImpl implements NumberGenerator {
 
@@ -24,13 +26,4 @@ public class NumberGeneratorImpl implements NumberGenerator {
         return random.nextInt(maxNumber - minNumber) + minNumber;
     }
 
-    @Override
-    public int getMaxNumber() {
-        return maxNumber;
-    }
-
-    @Override
-    public int getMinNumber() {
-        return minNumber;
-    }
 }
